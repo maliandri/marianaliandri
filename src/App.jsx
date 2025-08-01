@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Hero from "./components/Hero";
-import Proyectos from "./components/Proyectos";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Hero from "./components/Hero.jsx";
+import Proyectos from "./components/Proyectos.jsx";
+import Skills from "./components/Skills.jsx";
+import Contact from "./components/Contact.jsx";
 import "./index.css";
 
 // El componente principal de la aplicación, el cual renderiza los demás componentes
