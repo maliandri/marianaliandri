@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import Proyectos from "./components/Proyectos";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 // Importar otros componentes que crees
