@@ -37,11 +37,12 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
+        Analista de datos e inteligencia Empresarial. 
         Desarrollador web con pasión por crear soluciones elegantes y eficientes.
         Bienvenido a mi portafolio.
       </motion.p>
       <motion.a
-        href="https://wa.me/tunumerodetelefono"
+        href="https://wa.me/+542995414422"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-8 inline-block px-8 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
