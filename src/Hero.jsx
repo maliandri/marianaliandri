@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero";
+
 export default function Hero() {
   return (
     <div className="text-center py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-md rounded-lg">
