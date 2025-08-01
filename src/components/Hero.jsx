@@ -1,20 +1,58 @@
 import React from "react";
+import { motion } from "framer-motion";
+import tuFoto from "../assets/image_12a02c.jpg";
 
-export default function Hero() {
+// Componente para la sección principal (Hero) del portafolio
+function Hero() {
   return (
-    <div className="text-center py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-md rounded-lg">
-      <h1 className="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">
-        ¡Hola! Soy Mariano
-      </h1>
-      <p className="text-xl md:text-2xl mb-6">
-        Desarrollador Web & Analista de Datos
-      </p>
-      <a
-        href="#contacto"
-        className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-indigo-100 transition"
+    <motion.section
+      className="text-center p-8 md:p-12 rounded-3xl bg-white dark:bg-gray-800 shadow-xl border border-gray-200 dark:border-gray-700"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      <motion.div
+        className="mx-auto w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-4 border-indigo-500 shadow-lg"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
-        Contactame
-      </a>
-    </div>
+        <img
+          src={tuFoto}
+          alt="Foto de Mariano"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+      <motion.h1
+        className="mt-6 text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+      >
+        ¡Hola! Soy Mariano
+      </motion.h1>
+      <motion.p
+        className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 1 }}
+      >
+        Desarrollador web con pasión por crear soluciones elegantes y eficientes.
+        Bienvenido a mi portafolio.
+      </motion.p>
+      <motion.a
+        href="https://wa.me/tunumerodetelefono"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-8 inline-block px-8 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300 ease-in-out"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
+        Contactar por WhatsApp
+      </motion.a>
+    </motion.section>
   );
 }
+
+export default Hero;

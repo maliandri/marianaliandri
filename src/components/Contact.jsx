@@ -1,44 +1,43 @@
-// src/components/Contact.jsx
+import React from "react";
+import { motion } from "framer-motion";
 
-import React from 'react';
-
-// Defines el componente para la sección de contacto
+// Componente para la sección de contacto
 function Contact() {
   return (
-    // Usa una etiqueta <section> para agrupar el contenido
-    <section id="contact">
-      <h2>Contáctame</h2>
-      <p>
-        Si tienes alguna pregunta o quieres colaborar, no dudes en escribirme.
+    <motion.section
+      id="contact"
+      className="text-center p-8 md:p-12 rounded-3xl bg-white dark:bg-gray-800 shadow-xl border border-gray-200 dark:border-gray-700"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50">
+        ¡Hablemos!
+      </h2>
+      <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        Estoy disponible para nuevos proyectos y colaboraciones.
       </p>
-      
-      {/* Puedes usar un formulario simple como este */}
-      <form>
-        <div>
-          <label htmlFor="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-      
-      {/* O simplemente puedes poner tus datos de contacto */}
-      {/*
-      <div>
-          <p>Email: tu_email@ejemplo.com</p>
-          <p>LinkedIn: linkedin.com/in/tu_perfil</p>
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        {/* Enlace de correo electrónico */}
+        <a
+          href="mailto:marianoaliandri@gmail.com"
+          className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-md hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300"
+        >
+          Enviar un correo
+        </a>
+        {/* Enlace de LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/mariano-aliandri-816b4024/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-full hover:bg-indigo-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+        >
+          Visitar LinkedIn
+        </a>
       </div>
-      */}
-    </section>
+    </motion.section>
   );
 }
 
-// Exporta el componente para que pueda ser importado
 export default Contact;
