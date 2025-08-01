@@ -26,10 +26,10 @@ function Proyectos() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400">
-            WEB SCRAPPER MERCADO LIBRE
+            Web Scrapper para Sitio Mercado Libre.
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-300">
-            Desarrollo de un web scraper para extraer datos de Mercado Libre. Próximamente, alojaré el servicio en esta web.
+            Hosteo de un web scrapper en python de Mercado Libre. Próximamente, alojaré el servicio en esta web.
           </p>
         </motion.div>
         
@@ -42,12 +42,12 @@ function Proyectos() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400">
-            Análisis de Datos con Python
+            Análisis de Datos con Power Bi - Excel
           </h3>
           <p className="mt-2 text-gray-600 dark:text-gray-300">
             Un proyecto de análisis de datos para generar informes y visualizaciones a partir de grandes conjuntos de datos.
           </p>
-        </motion.div>
+        </motion.div
       </div>
     </motion.section>
   );

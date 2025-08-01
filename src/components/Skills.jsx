@@ -1,53 +1,30 @@
+// src/components/Skills.jsx
+
 import React from 'react';
-import { motion } from 'framer-motion';
-
-// Defines el componente para la sección de habilidades
 function Skills() {
-  const skills = [
-    "CIENCIA DE DATOS",
-    "EXCEL",
-    "MACROS EN EXCEL",
-    "POWER PIVOT",
-    "POWER QUERY",
-    "POWER BI",
-    "PYTHON",
-    "WEB DEVELOPMENT",
-    "HTML5",
-    "CSS3",
-    "JavaScript (ES6+)",
-    "React",
-    "Node.js",
-    "Git & GitHub",
-  ];
-
   return (
-    <motion.section
-      id="skills"
-      className="p-8 md:p-12 rounded-3xl bg-white dark:bg-gray-800 shadow-xl border border-gray-200 dark:border-gray-700"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-    >
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-gray-50">
-        Mis Habilidades
-      </h2>
-      
-      <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {skills.map((skill, index) => (
-          <motion.div
-            key={index}
-            className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md text-center font-medium text-gray-700 dark:text-gray-200 transform hover:scale-105 transition-all duration-300"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            {skill}
-          </motion.div>
-        ))}
-      </div>
-    </motion.section>
+    <section id="skills">
+      <h2>Mis Habilidades</h2>
+      {/* Aquí puedes usar una lista desordenada (<ul>) para tus habilidades */}
+<ul class="skills-list">
+  <li class="skill-item">Ciencia de Datos</li>
+  <li class="skill-item">Excel</li>
+  <li class="skill-item">Macros en Excel</li>
+  <li class="skill-item">Power Pivot</li>
+  <li class="skill-item">Power Query</li>
+  <li class="skill-item">Power BI</li>
+  <li class="skill-item">Python</li>
+  <li class="skill-item">Desarrollo Web</li>
+  <li class="skill-item">HTML5</li>
+  <li class="skill-item">CSS3</li>
+  <li class="skill-item">JavaScript (ES6+)</li>
+  <li class="skill-item">React</li>
+  <li class="skill-item">Node.js</li>
+  <li class="skill-item">Git & GitHub</li>
+</ul>
+      {/* También podrías usar una cuadrícula (grid) con iconos,
+          dependiendo del diseño que prefieras */}
+    </section>
   );
 }
 
