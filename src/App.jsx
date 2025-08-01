@@ -9,7 +9,7 @@ export default function App() {
   return (
     <main className="max-w-4xl mx-auto p-4 space-y-16">
       <Hero />
-      <Projects />
+      <Proyectos/>
       <Skills />
       <Contact />
       {/* Puedes agregar aquí otros componentes, como la sección de CV */}
