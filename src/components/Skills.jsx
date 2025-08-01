@@ -11,6 +11,14 @@ function Skills() {
       <h2>Mis Habilidades</h2>
       {/* Aquí puedes usar una lista desordenada (<ul>) para tus habilidades */}
       <ul>
+        <li>CIENCIA DE DATOS</li>
+        <li>EXCEL</li>
+        <li>MACROS EN EXCEL</li>
+        <li>POWER PIVOT "" </li>
+        <li>POWER QUERY ""</li>
+        <li>POWER BI</li>
+        <li>PYTHON</li>
+        <li>WEB DEVELOPMENT</li>
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JavaScript (ES6+)</li>
