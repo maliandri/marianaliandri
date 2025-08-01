@@ -47,7 +47,7 @@ function Proyectos() {
           <p className="mt-2 text-gray-600 dark:text-gray-300">
             Un proyecto de análisis de datos para generar informes y visualizaciones a partir de grandes conjuntos de datos.
           </p>
-        </motion.div
+        </motion.div>
       </div>
     </motion.section>
   );
